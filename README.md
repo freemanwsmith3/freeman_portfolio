@@ -1,2 +1,1 @@
-# freeman_portfolio go to index
-go to index
+# Portfolio for Freeman Smith
