@@ -1324,10 +1324,13 @@ h6 { font-size: 16px; }
 	width: 30%;
 	padding-left: 40px;
 }
-.dizme_tm_modalbox .main_details .detailbox > ul{
+
+.dizme_tm_modalbox .main_details .detailbox .link{
 	margin: 0px;
 	list-style-type: none;
+	color:#0000EE;
 }
+
 .dizme_tm_modalbox .main_details .detailbox > ul > li{
 	margin: 0px 0px 10px 0px;
 	width: 100%;

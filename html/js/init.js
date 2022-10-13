@@ -190,13 +190,15 @@ function dizme_tm_modalbox_portfolio(){
 		var element 	= jQuery(this);
 		var parent 		= element.closest('.inner');
 		var content	 	= parent.find('.hidden_content').html();
-		var image		= parent.find('.entry .main').data('img-url');
-		var category 	= parent.find('.entry').data('category');
+		var image 	= parent.find('.entry').data('img-pop');
+		var img_url = parent.find('.entry').data('img-url')
+		var href = parent.find('.entry').data('href');
+		var vis_link = parent.find('.entry').data('vis-link');
 		var title	 	= parent.find('.entry').data('title');
 		modalBox.addClass('opened');
 		modalBox.find('.description_wrap').html(content);
-		modalBox.find('.popup_details').prepend('<div class="top_image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+image+'"></div></div>');
-		modalBox.find('.popup_details .top_image').after('<div class="portfolio_main_title"><h3>'+title+'</h3><span><a href="#">'+category+'</a></span><div>');
+		modalBox.find('.popup_details').prepend('<div class="top_image"><img href = "' + img_url + '" src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+image+'"></div></div>');
+		modalBox.find('.popup_details .top_image').after('<div class="portfolio_main_title"><h3>'+title+'</h3><span><a style = "color:#0000EE;" href="' + href + '">'+vis_link+'</a></span><div>');
 		dizme_tm_data_images();
 		return false;
 	});
