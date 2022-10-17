@@ -2893,6 +2893,12 @@ input[type="number"] {
   .dizme_tm_process .icon .brush {
     max-width: 90px;
   }
+
+  .dizme_tm_process .icon .logo img{
+    width: 45px;
+    height: 45px;
+  }
+
   .dizme_tm_process .icon .svg {
     width: 45px;
     height: 45px;
