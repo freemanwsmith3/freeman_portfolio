@@ -197,8 +197,8 @@ function dizme_tm_modalbox_portfolio(){
 		var title	 	= parent.find('.entry').data('title');
 		modalBox.addClass('opened');
 		modalBox.find('.description_wrap').html(content);
-		modalBox.find('.popup_details').prepend('<div class="top_image"><img href = "' + img_url + '" src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+image+'"></div></div>');
-		modalBox.find('.popup_details .top_image').after('<div class="portfolio_main_title"><h3>'+title+'</h3><span><a style = "color:#0000EE;" href="' + href + '">'+vis_link+'</a></span><div>');
+		modalBox.find('.popup_details').prepend('<div class="top_image"><img href = "' + img_url + '"  target = "_blank" rel="nofollow" src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+image+'"></div></div>');
+		modalBox.find('.popup_details .top_image').after('<div class="portfolio_main_title"><h3>'+title+'</h3><span><a style = "color:#0000EE;" href="' + href + '"  target = "_blank" rel="nofollow">'+vis_link+'</a></span><div>');
 		dizme_tm_data_images();
 		return false;
 	});
